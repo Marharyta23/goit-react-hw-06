@@ -1,7 +1,9 @@
 import { useId } from "react";
+import { useDispatch } from "react-redux";
 import css from "./SearchBox.module.css";
 
 function SearchBox({ searchContacts, filterValue }) {
+  const dispatch = useDispatch();
   const findFieldId = useId();
   return (
     <div className={css.search}>
