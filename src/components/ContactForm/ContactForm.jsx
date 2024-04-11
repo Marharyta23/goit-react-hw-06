@@ -25,7 +25,6 @@ function ContactForm() {
     dispatch(addContact(values));
     actions.resetForm();
   }
-
   return (
     <Formik
       initialValues={{
